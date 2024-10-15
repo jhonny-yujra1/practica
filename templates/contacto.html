@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contacto</h1>
+    {% if success %}
+        <p>Mensaje enviado con éxito. Gracias por contactarnos.</p>
+    {% endif %}
+    <form method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" required>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" name="email" required>
+        <label for="message">Mensaje:</label>
+        <textarea name="message" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+    <p>Dirección: Calle Ficticia, 123</p>
+    <p>Teléfono: 123-456-7890</p>
+    <p>Email: contacto@empresa.com</p>
+    <div class="mapa">
+        <h2>Nuestra Ubicación</h2>
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6rMVmmU2LZCIaIANjL_J02ZLAjQhbcRVV8U8cEFJ2yAJPKl2IOWXPyYLARlcBS8AgNWgnQ1uxozp1SzWTnFXTGPuU6aPkukXIYdNRZnTaJigJfCbXOvjdDwhe716u38WYdhExZl8kE6I/s1600/2_ShowMaps.png" alt="Mapa">
+    </div>
+</body>
+</html>
